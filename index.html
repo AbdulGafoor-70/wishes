@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="color.css">
+</head>
+
+<body>
+
+<div id="sky">
+    
+    <div id="stars"></div>
+    <div id="sun"></div>
+    <div id="moon"></div>
+    <div id="cloud1" class="cloud"></div>
+    <div id="cloud2" class="cloud"></div>
+    <div id="cloud3" class="cloud"></div>
+    <div id="cloud4" class="cloud"></div>
+    <div id="cloud5" class="cloud"></div>
+    <div id="cloud6" class="cloud"></div>
+
+</div>
+
+<div id="hill1"></div>
+<div id="hill2"></div>
+<div id="hill3"></div>
+
+<img
+    src="assets/tree-nature-oak-svgrepo-com.svg"
+    id="tree1"
+>
+<img
+    src="assets/tree-nature-oak-svgrepo-com.svg"
+    id="tree2"
+>
+<img
+    src="assets/tree-nature-oak-svgrepo-com.svg"
+    id="tree3"
+>
+<img
+    src="assets/tree-nature-oak-svgrepo-com.svg"
+    id="tree4"
+>
+<img
+    src="assets/house.svg"
+    id="house1"
+>
+<img
+    src="assets/house.svg"
+    id="house2"
+>
+<img
+    src="assets/house.svg"
+    id="house3"
+>
+<img
+    src="assets/house.svg"
+    id="house4"
+>
+<img
+    src="assets/house.svg"
+    id="house5"
+>
+
+<div id="ground"></div>
+
+<div id="person1" class="person">
+
+    <div class="hair"></div>
+
+    <div class="head"></div>
+
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+
+    <div class="torso"></div>
+
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+
+</div>
+
+<div id="person2" class="person">
+
+    <div class="hair"></div>
+
+    <div class="head"></div>
+
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+
+    <div class="torso"></div>
+
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+
+</div>
+
+<div id="girl1" class="person">
+
+    <div class="girl-hair"></div>
+    <div class="girl-hair-top"></div>
+
+    <div class="head"></div>
+
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+
+    <div class="girl-dress"></div>
+
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+
+</div>
+
+<div id="girl2" class="person">
+
+    <div class="girl-hair"></div>
+    <div class="girl-hair-top"></div>
+
+    <div class="head"></div>
+
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+
+    <div class="girl-dress"></div>
+
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+
+</div>
+
+<div id="girl3" class="person">
+
+    <div class="girl-hair"></div>
+    <div class="girl-hair-top"></div>
+
+    <div class="head"></div>
+
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+
+    <div class="girl-dress"></div>
+
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+
+</div>
+
+<div id="partyTable"></div>
+
+<div class="tableLeg leg1"></div>
+<div class="tableLeg leg2"></div>
+<div id="cake">
+
+    <div id="cakeBottom"></div>
+
+    <div id="cakeTop"></div>
+    <div class="cherry cherry1"></div>
+    <div class="cherry cherry2"></div>
+    <div class="cherry cherry3"></div>
+
+    <div id="candle">
+
+        <div id="flame"></div>
+
+    </div>
+
+</div>
+<!-- GIFT 1 -->
+
+<div class="gift gift1">
+
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+
+    <div class="bow bow-left"></div>
+    <div class="bow bow-right"></div>
+
+</div>
+
+<!-- GIFT 2 -->
+
+<div class="gift gift2">
+
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+
+    <div class="bow bow-left"></div>
+    <div class="bow bow-right"></div>
+
+</div>
+
+<!-- GIFT 3 -->
+
+<div class="gift gift3">
+
+    <div class="ribbon-v"></div>
+    <div class="ribbon-h"></div>
+
+    <div class="bow bow-left"></div>
+    <div class="bow bow-right"></div>
+
+</div>
+<!-- PARTY DECORATIONS -->
+
+<div id="poleLeft"></div>
+
+<div id="poleRight"></div>
+
+<div id="partyBanner">
+    HAPPY BIRTHDAY
+</div>
+
+<div id="leftBalloons">
+
+    <div class="balloon pink"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon blue"></div>
+
+</div>
+
+<div id="rightBalloons">
+
+    <div class="balloon pink"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon blue"></div>
+
+</div>
+<!-- FIREFLIES -->
+
+<div id="firefly1" class="firefly"></div>
+<div id="firefly2" class="firefly"></div>
+<div id="firefly3" class="firefly"></div>
+<div id="firefly4" class="firefly"></div>
+<div id="firefly5" class="firefly"></div>
+
+
+//***Shooting star***//
+
+<div id="shootingStar"></div>
+
+//***        ***//
+    speechbubble
+//***        ***//
+<div id="speechBubble">
+
+    We all made it!
+
+</div>
+<script>
+
+const sky =
+document.getElementById("sky");
+
+const sun =
+document.getElementById("sun");
+
+const moon =
+document.getElementById("moon");
+
+const ground =
+document.getElementById("ground");
+
+const cloud1 = document.getElementById("cloud1");
+const cloud2 = document.getElementById("cloud2");
+const cloud3 = document.getElementById("cloud3");
+const cloud4 = document.getElementById("cloud4");
+const cloud5 = document.getElementById("cloud5");
+const cloud6 = document.getElementById("cloud6");
+
+for(let i = 0; i < 100; i++)
+{
+    const star =
+    document.createElement("div");
+
+    star.classList.add("star");
+
+    star.style.left =
+    Math.random() * window.innerWidth + "px";
+
+    star.style.top =
+    Math.random() * (window.innerHeight * 0.75) + "px";
+
+    star.style.animationDelay =
+    Math.random() * 2 + "s";
+
+    stars.appendChild(star);
+}
+
+const hour =
+new Date().getHours();
+
+if(hour >= 4 && hour < 5)
+{
+    // Astronomical Twilight
+    sky.style.background =
+    "linear-gradient(to bottom,#040720,#0A1128,#191970)";
+}
+else if(hour >= 5 && hour < 6)
+{
+    // Nautical + Civil Twilight
+    sky.style.background =
+    "linear-gradient(to bottom,#1A237E,#6A5ACD,#FF66B2,#FFCC99)";
+}
+else if(hour >= 6 && hour < 7)
+{
+    // Sunrise + Golden Hour
+    sky.style.background =
+    "linear-gradient(to bottom,#4FC3F7,#FFD54F,#FFC107,#FFF176)";
+}
+else if(hour >= 7 && hour < 10)
+{
+    // Morning Sky
+    sky.style.background =
+    "linear-gradient(to bottom,#87CEEB,#00BFFF,#BFEFFF)";
+}
+else if(hour >= 10 && hour < 15)
+{
+    // Midday
+    sky.style.background =
+    "linear-gradient(to bottom,#007FFF,#2A52BE,#4FC3F7)";
+}
+else if(hour >= 15 && hour < 17)
+{
+    // Late Afternoon
+    sky.style.background =
+    "linear-gradient(to bottom,#90CAF9,#B3E5FC,#FFF8DC)";
+}
+else if(hour >= 17 && hour < 18)
+{
+    // Evening Golden Hour
+    sky.style.background =
+    "linear-gradient(to bottom,#4FC3F7,#FFD54F,#FFB300,#FF8C00)";
+}
+else if(hour >= 18 && hour < 19)
+{
+    // Sunset + Civil Twilight
+    sky.style.background =
+    "linear-gradient(to bottom,#0D47A1,#6A1B9A,#FF66B2,#FF7043)";
+}
+else if(hour >= 19 && hour < 20)
+{
+    // Nautical Twilight
+    sky.style.background =
+    "linear-gradient(to bottom,#1A237E,#4B0082,#311B92,#0D47A1)";
+}
+else
+{
+    // Night
+    sky.style.background =
+    "linear-gradient(to bottom,#000080,#000428,#010B13)";
+}
+/* ADD SUN CODE HERE */
+
+function updateSun(){
+
+    const now = new Date();
+
+    const hour =
+        now.getHours() +
+        now.getMinutes()/60;
+
+    const currentSeconds =
+        now.getHours()*3600 +
+        now.getMinutes()*60 +
+        now.getSeconds();
+
+    const sunrise = 5.5 * 3600;
+    const sunset  = 18.5 * 3600;
+
+    let progress =
+        (currentSeconds - sunrise) /
+        (sunset - sunrise);
+
+    progress =
+        Math.max(0, Math.min(progress,1));
+
+const x =
+    60 +
+    progress *
+    (window.innerWidth - 180);
+
+const y =
+    window.innerHeight * 0.50 -
+    Math.sin(progress * Math.PI) *
+    (window.innerHeight * 0.45);
+    
+    sun.style.left = x + "px";
+    sun.style.top = y + "px";
+
+    /* SUN COLORS */
+
+    if(hour >= 5 && hour < 8)
+    {
+        sun.style.background =
+        "radial-gradient(circle,#FFF3E0,#FFB74D)";
+
+        sun.style.boxShadow =
+        "0 0 60px #FFB74D";
+    }
+
+    else if(hour >= 8 && hour < 11)
+    {
+        sun.style.background =
+        "radial-gradient(circle,#FFF8E1,#FFD54F)";
+
+        sun.style.boxShadow =
+        "0 0 90px #FFD54F";
+    }
+
+    else if(hour >= 11 && hour < 14)
+    {
+        sun.style.background =
+        "radial-gradient(circle,#FFFFFF,#FFEB3B)";
+
+        sun.style.boxShadow =
+        "0 0 150px #FFEB3B";
+    }
+
+    else if(hour >= 14 && hour < 16)
+    {
+        sun.style.background =
+        "radial-gradient(circle,#FFF8E1,#FFD54F)";
+
+        sun.style.boxShadow =
+        "0 0 90px #FFD54F";
+    }
+
+    else if(hour >= 16 && hour <= 18.5)
+    {
+        sun.style.background =
+        "radial-gradient(circle,#FFD54F,#FF6F00)";
+
+        sun.style.boxShadow =
+        "0 0 80px #FF5722";
+    }
+
+    /* SHOW/HIDE SUN */
+
+    if(currentSeconds < sunrise ||
+       currentSeconds > sunset)
+    {
+        sun.style.display = "none";
+
+        moon.style.display = "block";
+    }
+    else
+    {
+        sun.style.display = "block";
+
+        moon.style.display = "none";
+    }
+}
+
+function updateStars(){
+
+   const hour =
+    new Date().getHours() +
+    new Date().getMinutes()/60;
+
+    if(hour >= 19 || hour < 5)
+    {
+        stars.style.display = "block";
+    }
+    else
+    {
+        stars.style.display = "none";
+    }
+}
+
+function updateMoon(){
+
+    const now = new Date();
+
+    const hour =
+        now.getHours() +
+        now.getMinutes()/60;
+
+    const currentSeconds =
+        now.getHours()*3600 +
+        now.getMinutes()*60 +
+        now.getSeconds();
+
+    const moonrise = 18.5 * 3600; // 6:30 PM
+    const moonset  = 29.5 * 3600; // 5:30 AM next day
+
+    let adjustedSeconds =
+    currentSeconds;
+
+    if(currentSeconds < 5.5 * 3600)
+    {
+        adjustedSeconds += 24 * 3600;
+    }
+
+    let progress =
+        (adjustedSeconds - moonrise) /
+        (moonset - moonrise);
+
+    progress =
+        Math.max(0,Math.min(progress,1));
+
+    const x =
+        window.innerWidth -
+        (progress * window.innerWidth);
+
+    const y =
+        window.innerHeight * 0.55 -
+        Math.sin(progress * Math.PI) * 400;
+
+    moon.style.left = x + "px";
+    moon.style.top = y + "px";
+
+    let moonColor;
+
+    if(hour >= 18 && hour < 20.5)
+    {
+        moonColor = "#FFD27F";
+    }
+    else if(hour >= 20.5 && hour < 23)
+    {
+        moonColor = "#FFF4C2";
+    }
+    else if(hour >= 23 || hour < 3)
+    {
+        moonColor = "#FFFFFF";
+    }
+    else
+    {
+        moonColor = "#FFD27F";
+    }
+
+    moon.style.background =
+    `radial-gradient(
+        circle,
+        #FFFFFF,
+        ${moonColor}
+    )`;
+
+    moon.style.boxShadow =
+    `0 0 40px ${moonColor}`;
+}
+
+function updateClouds(){
+
+    const hour =
+        new Date().getHours() +
+        new Date().getMinutes()/60;
+
+    const clouds = [
+        cloud1,
+        cloud2,
+        cloud3,
+        cloud4,
+        cloud5,
+        cloud6
+    ];
+
+    /* Morning */
+    if(hour >= 5.5 && hour < 10)
+    {
+        clouds.forEach(cloud => {
+
+            cloud.style.setProperty(
+                "--cloud-color",
+                "#FFF8E1"
+            );
+
+            cloud.style.opacity = "0.9";
+        });
+
+        cloud1.style.display = "block";
+        cloud2.style.display = "block";
+        cloud3.style.display = "block";
+        cloud4.style.display = "block";
+        cloud5.style.display = "none";
+        cloud6.style.display = "none";
+    }
+
+    /* Day */
+    else if(hour >= 10 && hour < 17)
+    {
+        clouds.forEach(cloud => {
+
+            cloud.style.setProperty(
+                "--cloud-color",
+                "#FFFFFF"
+            );
+
+            cloud.style.opacity = "0.9";
+        });
+
+        cloud1.style.display = "block";
+        cloud2.style.display = "block";
+        cloud3.style.display = "block";
+        cloud4.style.display = "block";
+        cloud5.style.display = "block";
+        cloud6.style.display = "block";
+    }
+
+    /* Sunset */
+    else if(hour >= 17 && hour < 18.5)
+    {
+        clouds.forEach(cloud => {
+
+            cloud.style.setProperty(
+                "--cloud-color",
+                "#FFCC80"
+            );
+
+            cloud.style.opacity = "0.8";
+        });
+
+        cloud1.style.display = "block";
+        cloud2.style.display = "block";
+        cloud3.style.display = "block";
+        cloud4.style.display = "none";
+        cloud5.style.display = "none";
+        cloud6.style.display = "none";
+    }
+
+    /* Night */
+    else
+    {
+        clouds.forEach(cloud => {
+
+            cloud.style.setProperty(
+                "--cloud-color",
+                "#B0BEC5"
+            );
+
+            cloud.style.opacity = "0.4";
+        });
+
+        cloud1.style.display = "block";
+        cloud2.style.display = "block";
+        cloud3.style.display = "none";
+        cloud4.style.display = "none";
+        cloud5.style.display = "none";
+        cloud6.style.display = "none";
+    }
+
+}
+
+function updateGround(){
+
+    const hour =
+        new Date().getHours() +
+        new Date().getMinutes()/60;
+
+    /* Morning */
+    if(hour >= 5.5 && hour < 10)
+    {
+        ground.style.background =
+        "linear-gradient(to bottom,#8BC34A,#4CAF50,#2E7D32)";
+    }
+
+    /* Day */
+    else if(hour >= 10 && hour < 17)
+    {
+        ground.style.background =
+        "linear-gradient(to bottom,#66BB6A,#43A047,#1B5E20)";
+    }
+
+    /* Sunset */
+    else if(hour >= 17 && hour < 19)
+    {
+        ground.style.background =
+        "linear-gradient(to bottom,#A5C95A,#7CB342,#4E7D32)";
+    }
+
+    /* Night */
+    else
+    {
+        ground.style.background =
+        "linear-gradient(to bottom,#1B4332,#0B2E13,#050805)";
+    }
+
+}
+
+const person1 =
+document.getElementById("person1");
+
+let boyX = -5;
+
+function moveBoy(){
+
+    if(boyX < 30){
+
+        boyX += 0.05;
+
+        person1.style.left =
+        boyX + "vw";
+    }
+}
+setInterval(moveBoy, 30);
+const girl1 =
+document.getElementById("girl1");
+
+let girlX = 80;
+
+function moveGirl(){
+
+    if(girlX > 34){
+
+        girlX -= 0.05;
+
+        girl1.style.left =
+        girlX + "vw";
+    }
+}
+
+setInterval(moveGirl,30);
+const person2 =
+document.getElementById("person2");
+
+let p2x = 105;
+
+function movePerson2(){
+
+    if(p2x > 39){
+
+        p2x -= 0.05;
+
+        person2.style.left =
+        p2x + "vw";
+    }
+}
+
+setInterval(movePerson2,30);
+const girl2 =
+document.getElementById("girl2");
+
+
+
+let g2x = -10;
+
+function moveGirl2(){
+
+    if(g2x < 28){
+
+        g2x += 0.05;
+
+        girl2.style.left =
+        g2x + "vw";
+    }
+}
+
+setInterval(moveGirl2,30);
+const girl3 =
+document.getElementById("girl3");
+
+let g3x = 105;
+
+let giftDropped =false;
+
+function moveGirl3(){
+
+    const gift =
+    document.querySelector(".gift2");
+
+    if(g3x > 38){
+
+        gift.style.display =
+        "block";
+
+        g3x -= 0.05;
+
+        girl3.style.left =
+        g3x + "vw";
+
+        gift.style.left =
+        (g3x + 2) + "vw";
+
+        gift.style.bottom =
+        "11vh";
+    }
+    else{
+
+        gift.style.left =
+        "36vw";
+
+        if(!giftDropped){
+
+            gift.style.bottom =
+            "12vh";
+        }
+    }
+}
+
+setInterval(moveGirl3,30);
+
+/* =====================================
+   MEETING & SPEECH BUBBLE SYSTEM
+===================================== */
+
+const speechBubble =
+document.getElementById("speechBubble");
+
+speechBubble.style.display =
+"none";
+
+let meetingStarted =
+false;
+
+/* SHOW SPEECH ABOVE CHARACTER */
+
+function speak(
+    text,
+    leftPos,
+    bottomPos
+){
+
+    speechBubble.style.display =
+    "block";
+
+    speechBubble.innerText =
+    text;
+
+    speechBubble.style.left =
+    leftPos + "vw";
+
+    speechBubble.style.bottom =
+    bottomPos + "vh";
+}
+
+/* CHECK IF EVERYONE HAS ARRIVED */
+
+function checkMeeting(){
+
+    if(
+
+        !meetingStarted &&
+
+        boyX >= 29.9 &&
+        girlX <= 34.1 &&
+        g2x >= 27.9 &&
+        g3x <= 38.1 &&
+        p2x <= 39.1
+
+    ){
+
+        meetingStarted =
+        true;
+
+        speak(
+            "Everyone made it!",
+            30,
+            25
+        );
+        setTimeout(function(){
+
+        speak(
+            "Looks like we're all here.",
+            34,
+            25
+        );
+        },3000);
+
+        setTimeout(function(){
+
+        speak(
+            "Did everyone bring what they were supposed to?",
+            42,
+            25
+        );
+
+        },6000);
+
+        setTimeout(function(){
+
+        speak(
+            "Don't worry, I brought a special gift.",
+            38,
+            20
+        );
+        },9000);
+
+        setTimeout(function(){
+
+           speak(
+            "Good! We can start decorating.",
+            28,
+            20
+        );
+
+        },12000);
+
+        setTimeout(function(){
+
+            speak(
+                "Alright everyone, let's begin!",
+                30,
+                25
+            );
+
+        },15000);
+
+        setTimeout(function(){
+
+            speechBubble.style.display =
+            "none";
+
+        },18000);
+
+        /* =====================================
+        GIFT MAGIC SEQUENCE
+        ===================================== */
+
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            gift.style.animation =
+            "shakeGift 0.3s infinite";
+
+        },20000);
+
+        /* GIRL3 NOTICES */
+
+        setTimeout(function(){
+
+            speak(
+                "Uh... why is my gift moving?",
+                38,
+                20
+            );
+
+        },22000);
+        /* GIFT DROPS */
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            giftDropped =
+            true;
+
+            gift.style.left = "36vw";
+
+            gift.style.bottom =
+            "10vh";
+
+        },24000);
+
+        /* PERSON1 REACTS */
+
+        setTimeout(function(){
+
+            speak(
+                "Wait... gifts aren't supposed to do that.",
+                30,
+                25
+            );
+
+        },25000);
+
+        /* SHAKE HARDER */
+
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            gift.style.animation =
+            "shakeGift 0.15s infinite";
+
+        },28000);
+
+        /* GIRL1 REACTS */
+
+        setTimeout(function(){
+
+            speak(
+                "Something is inside!",
+                34,
+                25
+            );
+
+        },30000);
+
+        /* PERSON2 WARNS EVERYONE */
+
+        setTimeout(function(){
+
+            speak(
+                "Everyone step back!",
+                42,
+                25
+            );
+
+        },33000);
+
+        /* GIFT STOPS SHAKING */
+
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            gift.style.animation =
+            "none";
+
+        },36000);
+
+        /* GIFT OPENS */
+
+        setTimeout(function(){
+
+            speak(
+                "Look! It's opening!",
+                28,
+                20
+            );
+
+        },37000);
+        /* =====================================
+        GIFT OPENING EFFECT
+        ===================================== */
+
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            gift.style.transform =
+            "translateX(-50%) scale(1.5)";
+
+        },39000);
+
+        /* =====================================
+        MAGIC GLOW
+        ===================================== */
+
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            gift.style.boxShadow =
+            "0 0 20px gold, 0 0 40px yellow";
+
+        },41000);
+        /* =====================================
+        GIFT VANISHES
+        ===================================== */
+
+        setTimeout(function(){
+
+            const gift =
+            document.querySelector(".gift2");
+
+            gift.style.display =
+            "none";
+
+        },42000);
+        /* =====================================
+        FIREFLIES APPEAR
+        ===================================== */
+        setTimeout(function(){
+
+            const f1 =
+            document.getElementById("firefly1");
+
+            const f2 =
+            document.getElementById("firefly2");
+
+            const f3 =
+            document.getElementById("firefly3");
+
+            const f4 =
+            document.getElementById("firefly4");
+
+            const f5 =
+            document.getElementById("firefly5");
+
+            f1.style.display = "block";
+            f2.style.display = "block";
+            f3.style.display = "block";
+            f4.style.display = "block";
+            f5.style.display = "block";
+
+            f1.style.left = "35vw";
+            f1.style.bottom = "15vh";
+
+            f2.style.left = "37vw";
+            f2.style.bottom = "18vh";
+
+            f3.style.left = "39vw";
+            f3.style.bottom = "16vh";
+
+            f4.style.left = "36vw";
+            f4.style.bottom = "20vh";
+
+            f5.style.left = "38vw";
+            f5.style.bottom = "22vh";
+
+        },42500);
+
+        /* =====================================
+        TABLE APPEARS
+        ===================================== */
+
+        setTimeout(function(){
+
+            document.getElementById(
+                "partyTable"
+            ).style.display =
+            "block";
+
+            document.querySelector(
+                ".leg1"
+            ).style.display =
+            "block";
+
+            document.querySelector(
+                ".leg2"
+            ).style.display =
+            "block";
+
+        },43000);
+
+        /* =====================================
+        POLES APPEAR
+        ===================================== */
+
+        setTimeout(function(){
+
+            document.getElementById(
+                "poleLeft"
+            ).style.display =
+            "block";
+
+            document.getElementById(
+                "poleRight"
+            ).style.display =
+            "block";
+
+        },45000);
+
+        /* =====================================
+        BANNER APPEARS
+        ===================================== */
+
+        setTimeout(function(){
+
+            document.getElementById(
+                "partyBanner"
+            ).style.display =
+            "block";
+
+        },47000);
+
+        /* =====================================
+        BALLOONS APPEAR
+        ===================================== */
+
+        setTimeout(function(){
+
+            document.getElementById(
+                "leftBalloons"
+            ).style.display =
+            "block";
+
+            document.getElementById(
+                "rightBalloons"
+            ).style.display =
+            "block";
+
+        },49000);
+
+        /* =====================================
+        CAKE APPEARS
+        ===================================== */
+
+        setTimeout(function(){
+
+            document.getElementById(
+                "cake"
+            ).style.display =
+            "block";
+
+        },51000);
+
+        /* =====================================
+        EXTRA GIFTS APPEAR
+        ===================================== */
+
+        setTimeout(function(){
+
+            document.querySelector(
+                ".gift1"
+            ).style.display =
+            "block";
+
+            document.querySelector(
+                ".gift3"
+            ).style.display =
+            "block";
+
+            document.querySelector(
+                ".gift1"
+            ).style.left =
+            "43vw";
+
+            document.querySelector(
+                ".gift1"
+            ).style.bottom =
+            "16vh";
+
+            document.querySelector(
+                ".gift3"
+            ).style.left =
+            "55vw";
+
+            document.querySelector(
+                ".gift3"
+            ).style.bottom =
+            "16vh";
+
+        },52000);
+
+        /* =====================================
+        FINAL REACTION
+        ===================================== */
+
+        setTimeout(function(){
+
+            speak(
+                "WOW! The gift did all this!",
+                32,
+                25
+            );
+
+        },53000);
+
+        /* PERSON1 */
+
+        setTimeout(function(){
+
+            speak(
+                "Look at the lights!",
+                36,
+                25
+            );
+
+        },56000);
+
+        /* PERSON2 */
+
+        setTimeout(function(){
+
+            speak(
+                "Wait... what's that in the sky?",
+                42,
+                25
+            );
+
+        },58000);
+
+        /* GIRL1 */
+
+        setTimeout(function(){
+
+            speak(
+                "Everyone look up!",
+                34,
+                25
+            );
+
+        },59000);
+
+        /* =====================================
+        SHOOTING STAR
+        ===================================== */
+
+        setTimeout(function(){
+
+            const star =
+            document.getElementById(
+                "shootingStar"
+            );
+
+            star.style.display =
+            "block";
+
+            let x = -10;
+
+            const starMove =
+            setInterval(function(){
+
+                x += 1;
+
+                star.style.left =
+                x + "vw";
+
+                star.style.top =
+                (10 + x * 0.2) + "vh";
+
+                if(x > 110){
+
+                    clearInterval(
+                        starMove
+                    );
+
+                    star.style.display =
+                    "none";
+                }
+
+            },20);
+
+        },60000);
+
+        /* GIRL3 */
+
+        setTimeout(function(){
+
+            speak(
+                "Wow... that shooting star was beautiful!",
+                38,
+                25
+            );
+
+        },63000);
+
+        /* PERSON1 */
+
+        setTimeout(function(){
+
+            speak(
+                "I've never seen anything like that before.",
+                30,
+                25
+            );
+
+        },66000);
+
+        /* GIRL1 */
+
+        setTimeout(function(){
+
+            speak(
+                "Quick! Everyone make a birthday wish for Karishma!",
+                34,
+                25
+            );
+
+        },69000);
+
+        /* GIRL2 */
+
+        setTimeout(function(){
+
+            speak(
+                "I wish Karishma a year full of happiness and beautiful memories.",
+                26,
+                20
+            );
+
+        },72000);
+
+        /* GIRL3 */
+
+        setTimeout(function(){
+
+            speak(
+                "May all your dreams and goals come true, Karishma!",
+                38,
+                25
+            );
+
+        },75000);
+
+        /* PERSON2 */
+
+        setTimeout(function(){
+
+            speak(
+                "Wishing you success, good health, and endless laughter, Karishma.",
+                42,
+                25
+            );
+
+        },78000);
+
+        /* PERSON1 */
+
+        setTimeout(function(){
+
+            speak(
+                "May every day bring you new reasons to smile and be proud.",
+                30,
+                25
+            );
+
+        },81000);
+
+        /* GIRL1 */
+
+        setTimeout(function(){
+
+            speak(
+                "Looks like the stars heard our wishes tonight.",
+                34,
+                25
+            );
+
+        },84000);
+
+        /* EVERYONE */
+
+        setTimeout(function(){
+
+            speak(
+                "Happy Birthday Karishma! 🎂🎉🎁✨",
+                34,
+                30
+            );
+
+        },87000);
+
+        /* FINAL MESSAGE */
+
+        setTimeout(function(){
+
+            speak(
+                "May all your wishes come true, Karishma. ✨",
+                34,
+                30
+            );
+
+        },90000);
+
+        setTimeout(function(){
+
+            speechBubble.style.display =
+            "none";
+
+        },92000);
+
+
+    }
+}
+
+setInterval(
+    checkMeeting,
+    500
+);
+
+function goHomeScene(){
+
+    if(goHome){
+
+        boyX -= 0.08;
+        g2x -= 0.08;
+
+        girlX += 0.08;
+        g3x += 0.08;
+        p2x += 0.08;
+
+        person1.style.left =
+        boyX + "vw";
+
+        girl2.style.left =
+        g2x + "vw";
+
+        girl1.style.left =
+        girlX + "vw";
+
+        girl3.style.left =
+        g3x + "vw";
+
+        person2.style.left =
+        p2x + "vw";
+    }
+}
+
+setInterval(
+    goHomeScene,
+    30
+);
+
+/* =====================================
+   FIREFLY MOVEMENT
+===================================== */
+
+let fireflyAngle = 0;
+
+function moveFireflies(){
+
+    fireflyAngle += 0.05;
+
+    const f1 =
+    document.getElementById("firefly1");
+
+    const f2 =
+    document.getElementById("firefly2");
+
+    const f3 =
+    document.getElementById("firefly3");
+
+    const f4 =
+    document.getElementById("firefly4");
+
+    const f5 =
+    document.getElementById("firefly5");
+
+    f1.style.left =
+    (35 + Math.sin(fireflyAngle) * 3) + "vw";
+
+    f2.style.left =
+    (37 + Math.cos(fireflyAngle) * 3) + "vw";
+
+    f3.style.left =
+    (39 + Math.sin(fireflyAngle + 1) * 3) + "vw";
+
+    f4.style.left =
+    (36 + Math.cos(fireflyAngle + 2) * 3) + "vw";
+
+    f5.style.left =
+    (38 + Math.sin(fireflyAngle + 3) * 3) + "vw";
+}
+
+setInterval(
+    moveFireflies,
+    50
+);
+
+function updateWorld(){
+
+    updateSun();
+    updateMoon();
+    updateGround();
+    updateStars();
+    updateClouds();
+}
+
+updateWorld();
+
+setInterval(updateWorld,1000);
+</script>
+
+</body>
+</html>

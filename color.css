@@ -1,0 +1,1443 @@
+body{
+    margin:0;
+    overflow:hidden;
+}
+
+#sky{
+    width:100vw;
+    height:75vh;
+    background:linear-gradient(
+        to bottom,
+        #6EC6FF,
+        #87CEEB,
+        #FFE8B6
+    );
+    position:relative;
+}
+
+#ground{
+    width:100vw;
+    height:25vh;
+
+    background:linear-gradient(
+        to bottom,
+        #A5D66A 0%,
+        #8BC34A 10%,
+        #4CAF50 40%,
+        #2E7D32 100%
+    );
+
+    transition: background 20s linear;
+}
+
+#sun{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:absolute;
+
+    top:100px;
+    left:100px;
+
+    background:radial-gradient(
+        circle,
+        #FFFDE7,
+        #FFEB3B
+    );
+
+    animation:sunBlink 2s infinite;
+    z-index: 2;
+}
+
+#moon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    position:absolute;
+
+
+
+    background:radial-gradient(
+        circle,
+        #FFFFFF,
+        #D6D6D6
+    );
+
+    display:none;
+
+    animation:moonBlink 3s infinite;
+}
+
+#stars{
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    width:100%;
+    height:75vh;
+}
+
+.star{
+    width:3px;
+    height:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    animation: twinkle 2s infinite;
+}
+
+.cloud{
+
+    position:absolute;
+
+    width:120px;
+    height:40px;
+
+    --cloud-color:white;
+
+    background:var(--cloud-color);
+
+    border-radius:50px;
+
+    opacity:0.9;
+}
+
+.cloud::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:50px;
+    height:50px;
+
+    background:var(--cloud-color);
+
+    border-radius:50%;
+
+    top:-20px;
+    left:15px;
+}
+
+.cloud::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:60px;
+    height:60px;
+
+    background:var(--cloud-color);
+
+    border-radius:50%;
+
+    top:-30px;
+    right:15px;
+}
+#cloud1{
+    top:80px;
+    left:0;
+    animation:cloudMove 120s linear infinite;
+}
+
+#cloud2{
+    top:150px;
+    left:300px;
+    animation:cloudMove 150s linear infinite;
+}
+
+#cloud3{
+    top:50px;
+    left:700px;
+    animation:cloudMove 180s linear infinite;
+}
+
+#cloud4{
+    top:200px;
+    left:1000px;
+    animation:cloudMove 140s linear infinite;
+}
+
+#cloud5{
+    top:120px;
+    left:1400px;
+    animation:cloudMove 170s linear infinite;
+}
+
+#cloud6{
+    top:30px;
+    left:1700px;
+    animation:cloudMove 200s linear infinite;
+}#hill1{
+
+    position:absolute;
+
+    bottom:25vh;
+    left:0vw;
+
+    width:0;
+    height:0;
+
+    border-left:12vw solid transparent;
+    border-right:12vw solid transparent;
+    border-bottom:12vh solid #0F2A1D;
+}
+
+#hill2{
+
+    position:absolute;
+
+    bottom:25vh;
+    left:25vw;
+
+    width:0;
+    height:0;
+
+    border-left:18vw solid transparent;
+    border-right:18vw solid transparent;
+    border-bottom:18vh solid #143524;
+}
+
+#hill3{
+
+    position:absolute;
+
+    bottom:25vh;
+    right:0vw;
+
+    width:0;
+    height:0;
+
+    border-left:15vw solid transparent;
+    border-right:15vw solid transparent;
+    border-bottom:14vh solid #0A1F15;
+
+    z-index: 3;
+}
+
+#tree1{
+
+    position:absolute;
+
+    width:10vw;
+
+    left:12vw;
+
+    bottom:25vh;
+
+    z-index:10;
+}
+#tree2{
+
+    position:absolute;
+
+    width:7vw;
+
+    right:15vw;
+
+    bottom:25vh;
+
+    z-index:10;
+}
+#tree3{
+
+    position:absolute;
+
+    width:5vw;
+
+    left:55vw;
+
+    bottom:25vh;
+
+    z-index:10;
+}
+#tree4{
+
+    position:absolute;
+
+    width:3vw;
+
+    right:4vw;
+
+    bottom:25vh;
+
+    z-index:10;
+}
+#house1{
+
+    position:absolute;
+
+    width:8vw;
+
+    left:30vw;
+
+    bottom:25vh;
+
+    z-index:11;
+}
+#house2{
+
+    position:absolute;
+
+    width:7vw;
+
+    left:45vw;
+
+    bottom:25vh;
+
+    z-index:9;
+}
+#house3{
+
+    position:absolute;
+
+    width:10vw;
+
+    left:68vw;
+
+    bottom:25vh;
+
+    z-index:11;
+}
+#house4{
+
+    position:absolute;
+
+    width:5vw;
+
+    left:40vw;
+
+    bottom:25vh;
+
+    z-index:11;
+}
+#house5{
+
+    position:absolute;
+
+    width:5vw;
+
+    left:88vw;
+
+    bottom:25vh;
+
+    z-index:11;
+}
+#person1{
+
+    position:absolute;
+
+    left:-5vw;
+
+    bottom:15vh;
+
+    z-index:20;
+}
+
+.person{
+
+    position:absolute;
+
+    width:30px;
+    height:60px;
+}
+
+/* HAIR */
+
+.hair{
+
+    position:absolute;
+
+    width:18px;
+    height:8px;
+
+    background:#2B1B17;
+
+    border-radius:10px 10px 0 0;
+
+    left:6px;
+    top:0px;
+
+    z-index:3;
+}
+
+/* HEAD */
+
+.head{
+
+    position:absolute;
+
+    width:16px;
+    height:16px;
+
+    background:#F5CBA7;
+
+    border-radius:50%;
+
+    left:7px;
+    top:4px;
+
+    z-index:2;
+}
+
+/* BODY */
+
+.torso{
+
+    position:absolute;
+
+    width:18px;
+    height:22px;
+
+    background:#3498DB;
+
+    border-radius:4px;
+
+    left:6px;
+    top:22px;
+}
+
+/* ARMS */
+
+.left-arm,
+.right-arm{
+
+    position:absolute;
+
+    width:3px;
+    height:16px;
+
+    background:#F5CBA7;
+
+    border-radius:2px;
+
+    top:24px;
+
+    transform-origin:top center;
+}
+
+.left-arm{
+
+    left:2px;
+}
+
+.right-arm{
+
+    left:25px;
+}
+/* LEGS */
+
+.left-leg,
+.right-leg{
+
+    position:absolute;
+
+    width:4px;
+    height:18px;
+
+    background:#2C3E50;
+
+    border-radius:2px;
+
+    top:44px;
+
+    transform-origin:top center;
+}
+.left-leg{
+
+    left:10px;
+}
+
+.right-leg{
+
+    left:17px;
+}
+#person2{
+
+    left:105vw;
+
+    bottom:15vh;
+}
+
+#person2 .torso{
+
+    background:#1E3A8A;
+}/* GIRL 1 */
+
+#girl1{
+
+    position:absolute;
+
+    left:80vw;
+
+    bottom:15vh;
+
+    z-index:20;
+}
+
+/* CONTAINER */
+
+.person{
+
+    position:absolute;
+
+    width:30px;
+    height:60px;
+}
+
+/* HAIR */
+.girl-hair{
+
+    position:absolute;
+
+    width:24px;
+    height:20px;
+
+    background:#2B1B17;
+
+    border-radius:12px;
+
+    left:3px;
+    top:2px;
+
+    z-index:1;
+}
+/* TOP HAIR BUMP */
+
+.girl-hair-top{
+
+    position:absolute;
+
+    width:18px;
+    height:8px;
+
+    background:#2B1B17;
+
+    border-radius:10px 10px 0 0;
+
+    left:6px;
+    top:0px;
+
+    z-index:3;
+}
+
+/* LEFT HAIR STRAND */
+
+.girl-hair::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+    height:12px;
+
+    background:#2B1B17;
+
+    left:0px;
+    top:8px;
+
+    border-radius:4px;
+}
+
+/* RIGHT HAIR STRAND */
+
+.girl-hair::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+    height:12px;
+
+    background:#2B1B17;
+
+    right:0px;
+    top:8px;
+
+    border-radius:4px;
+}
+/* HEAD */
+
+.head{
+
+    position:absolute;
+
+    width:16px;
+    height:16px;
+
+    background:#F5CBA7;
+
+    border-radius:50%;
+
+    left:7px;
+    top:4px;
+
+    z-index:2;
+}
+.girl-dress{
+
+    position:absolute;
+
+    width:18px;
+    height:20px;
+
+    background:#FF69B4;
+
+    left:6px;
+    top:22px;
+
+    border-radius:4px;
+
+    z-index:1;
+}
+
+.girl-dress::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:24px;
+    height:8px;
+
+    background:#FF69B4;
+
+    left:-3px;
+    bottom:-4px;
+
+    border-radius:0 0 8px 8px;
+}
+/* ARMS */
+
+.left-arm,
+.right-arm{
+
+    position:absolute;
+
+    width:3px;
+    height:16px;
+
+    background:#F5CBA7;
+
+    border-radius:2px;
+
+    top:24px;
+
+    z-index:2;
+}
+
+.left-arm{
+
+    left:2px;
+
+    transform:rotate(10deg);
+}
+
+.right-arm{
+
+    left:25px;
+
+    transform:rotate(-10deg);
+}
+
+/* LEGS */
+
+.left-leg,
+.right-leg{
+
+    position:absolute;
+
+    width:3px;
+    height:16px;
+
+    background:#2C3E50;
+
+    border-radius:2px;
+
+    top:46px;
+
+    z-index:0;
+}
+
+.left-leg{
+
+    left:10px;
+}
+
+.right-leg{
+
+    left:17px;
+}
+#girl2{
+
+    position:absolute;
+
+    left:-10vw;
+
+    bottom:10vh;
+
+    z-index:20;
+}
+
+#girl2 .girl-dress,
+#girl2 .girl-dress::after{
+
+    background:#BA68C8;
+}
+#girl3{
+
+    position:absolute;
+
+    left:105vw;
+
+    bottom:10vh;
+
+    z-index:20;
+}
+
+#girl3 .girl-dress,
+#girl3 .girl-dress::after{
+
+    background:#FFC107;
+}
+#partyTable{
+
+    position:absolute;
+
+    width:18vw;
+    height:2vh;
+
+    left:50%;
+
+    bottom:15vh;
+
+    transform:translateX(-50%);
+
+    background:#8B5A2B;
+
+    border-radius:8px;
+
+    box-shadow:
+    0 0.8vh 1.5vh rgba(0,0,0,0.35);
+
+    z-index:15;
+}
+.tableLeg{
+
+    position:absolute;
+
+    width:0.5vw;
+    height:7vh;
+
+    background:#6B3E1E;
+
+    bottom:8vh;
+
+    z-index:14;
+}
+
+.leg1{
+    left:44%;
+}
+
+.leg2{
+    left:56%;
+}
+#cake{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:16vh;
+
+    transform:translateX(-50%);
+
+    width:6vw;
+    height:6vh;
+
+    z-index:21;
+}
+/* Bottom Layer */
+
+#cakeBottom{
+
+    position:absolute;
+
+    width:100%;
+    height:60%;
+
+    bottom:0;
+
+    background:
+    linear-gradient(
+    #D2691E,
+    #8B4513
+);
+    border-radius:6px;
+}
+
+/* Top Layer */
+
+#cakeTop{
+
+    position:absolute;
+
+    width:80%;
+    height:40%;
+
+    left:10%;
+
+    bottom:55%;
+
+    background:
+    linear-gradient(
+    #FFF8E1
+    );
+
+    border-radius:6px;
+}
+.cherry{
+
+    position:absolute;
+
+    width:8px;
+    height:8px;
+
+    background:#D50000;
+
+    border-radius:50%;
+
+    z-index:22;
+}
+
+.cherry1{
+
+    left:25%;
+    top:18%;
+}
+
+.cherry2{
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:12%;
+}
+
+.cherry3{
+
+    right:25%;
+    top:18%;
+}
+/* Candle */
+
+#candle{
+
+    position:absolute;
+
+    width:4px;
+    height:18px;
+
+    background:white;
+
+    left:50%;
+
+    top:-18px;
+
+    transform:translateX(-50%);
+}
+
+/* Flame */
+
+#flame{
+
+    position:absolute;
+
+    width:8px;
+    height:12px;
+
+    background:
+    radial-gradient(
+    circle,
+    #FFF59D,
+    gold,
+    orange
+    );
+
+    border-radius:50% 50% 50% 50%;
+
+    left:50%;
+
+    top:-8px;
+
+    transform:
+    translateX(-50%);
+
+    box-shadow:
+    0 0 10px gold,
+    0 0 20px orange;
+}
+/* =======================
+   GIFTS
+======================= */
+
+.gift{
+
+    position:absolute;
+
+    width:24px;
+    height:24px;
+
+    border-radius:3px;
+
+    z-index:18;
+}
+
+/* LEFT GIFT */
+
+.gift1{
+
+    background:#2196F3;
+
+    left:42vw;
+    bottom:16vh;
+}
+
+/* CENTER GIFT */
+
+.gift2{
+
+    background:#FF69B4;
+
+    left:45vw;
+    bottom:16vh;
+
+    transform:translateX(-50%);
+}
+
+/* RIGHT GIFT */
+
+.gift3{
+
+    background:#9C27B0;
+
+    left:55vw;
+    bottom:16vh;
+}
+/* RIBBONS */
+
+.ribbon-v{
+
+    position:absolute;
+
+    width:4px;
+    height:100%;
+
+    background:gold;
+
+    left:10px;
+}
+
+.ribbon-h{
+
+    position:absolute;
+
+    width:100%;
+    height:4px;
+
+    background:gold;
+
+    top:10px;
+}
+
+/* BOWS */
+
+.bow{
+
+    position:absolute;
+
+    width:8px;
+    height:6px;
+
+    border:2px solid gold;
+
+    border-radius:50%;
+
+    top:-4px;
+}
+
+.bow-left{
+
+    left:4px;
+}
+
+.bow-right{
+
+    right:4px;
+}
+
+@keyframes flicker{
+
+    0%{
+        transform:
+        translateX(-50%)
+        scale(1);
+    }
+
+    50%{
+        transform:
+        translateX(-50%)
+        scale(1.15);
+    }
+
+    100%{
+        transform:
+        translateX(-50%)
+        scale(1);
+    }
+}
+@keyframes wave{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(-40deg);
+    }
+
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes cloudMove{
+
+    from{
+        transform:translateX(-200px);
+    }
+
+    to{
+        transform:translateX(calc(100vw + 200px));
+    }
+}
+
+@keyframes twinkle{
+
+    0%{
+        opacity:0.3;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.3;
+    }
+}
+
+@keyframes sunBlink{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes moonBlink{
+
+    0%{
+        opacity:0.8;
+    }
+
+    50%{
+
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.8;
+    }
+}
+/* =========================
+   PARTY DECORATIONS
+========================= */
+#poleLeft{
+
+    position:absolute;
+
+    left:41vw;
+
+    bottom:25vh;
+
+    width:4px;
+
+    height:12vh;
+
+    background:#8B5A2B;
+
+    z-index:15;
+}
+
+#poleRight{
+
+    position:absolute;
+
+    left:59vw;
+
+    bottom:25vh;
+
+    width:4px;
+
+    height:12vh;
+
+    background:#8B5A2B;
+
+    z-index:15;
+}
+#partyBanner{
+
+    position:absolute;
+
+    left:50%;
+    bottom:34vh;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:10px;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.35);
+
+    z-index:20;
+
+    animation:bannerBlink 3s infinite;
+}
+/* BALLOONS */
+
+.balloon{
+
+    position:absolute;
+
+    width:18px;
+
+    height:24px;
+
+    border-radius:50%;
+}
+
+.balloon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:1px;
+
+    height:20px;
+
+    background:white;
+
+    left:50%;
+
+    top:22px;
+}
+
+.pink{
+    background:#FF69B4;
+}
+
+.yellow{
+    background:#FFD54F;
+}
+
+.blue{
+    background:#4FC3F7;
+}
+/* =========================
+   LEFT BALLOONS
+========================= */
+
+#leftBalloons{
+
+    position:absolute;
+
+    left:40vw;
+    bottom:43vh;
+
+    z-index:20;
+}
+
+#leftBalloons .balloon:nth-child(1){
+
+    left:0px;
+}
+
+#leftBalloons .balloon:nth-child(2){
+
+    left:16px;
+    top:-10px;
+}
+
+#leftBalloons .balloon:nth-child(3){
+
+    left:32px;
+}
+
+/* =========================
+   RIGHT BALLOONS
+========================= */
+
+#rightBalloons{
+
+    position:absolute;
+
+    left:57vw;
+
+    bottom:43vh;   /* FIXED */
+
+    z-index:20;
+}
+
+#rightBalloons .balloon:nth-child(1){
+
+    left:0px;
+}
+
+#rightBalloons .balloon:nth-child(2){
+
+    left:16px;
+    top:-10px;
+}
+
+#rightBalloons .balloon:nth-child(3){
+
+    left:32px;
+}
+@keyframes bannerBlink{
+
+    0%{
+
+        background:#E91E63;
+        text-shadow:0 0 10px white;
+    }
+
+    25%{
+
+        background:#9C27B0;
+        text-shadow:0 0 15px yellow;
+    }
+
+    50%{
+
+        background:#2196F3;
+        text-shadow:0 0 15px cyan;
+    }
+
+    75%{
+
+        background:#FF9800;
+        text-shadow:0 0 15px gold;
+    }
+
+    100%{
+
+        background:#E91E63;
+        text-shadow:0 0 10px white;
+    }
+}
+/* =========================
+   GIFT SHAKE ANIMATION
+========================= */
+
+@keyframes shakeGift{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    25%{
+        transform:rotate(-5deg);
+    }
+
+    50%{
+        transform:rotate(5deg);
+    }
+
+    75%{
+        transform:rotate(-5deg);
+    }
+
+    100%{
+        transform:rotate(0deg);
+    }
+}
+#person1 .left-leg{
+
+    animation:leftWalk 0.6s infinite;
+}
+
+#person1 .right-leg{
+
+    animation:rightWalk 0.6s infinite;
+}
+
+#person1 .left-arm{
+
+    animation:rightWalk 0.6s infinite;
+}
+
+#person1 .right-arm{
+
+    animation:leftWalk 0.6s infinite;
+}
+#girl1 .left-leg{
+    animation:leftWalk 0.6s infinite;
+}
+
+#girl1 .right-leg{
+    animation:rightWalk 0.6s infinite;
+}
+
+#girl1 .left-arm{
+    animation:rightWalk 0.6s infinite;
+}
+
+#girl1 .right-arm{
+    animation:leftWalk 0.6s infinite;
+}
+#partyTable,
+#cake,
+#partyBanner,
+#poleLeft,
+#poleRight,
+#leftBalloons,
+#rightBalloons,
+.gift1,
+.gift2,
+.gift3,
+.tableLeg{
+
+    display:none;
+}
+/* =========================
+   SPEECH BUBBLE
+========================= */
+
+#speechBubble{
+
+    position:absolute;
+
+    left:50vw;
+
+    bottom:22vh;
+
+    transform:translateX(-50%);
+
+    background:white;
+
+    color:#333;
+
+    padding:10px 16px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.25);
+
+    z-index:100;
+}
+
+/* Bubble Tail */
+
+#speechBubble::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-10px;
+
+    transform:translateX(-50%);
+
+    width:0;
+    height:0;
+
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+
+    border-top:10px solid white;
+}
+/* =========================
+   FIREFLIES
+========================= */
+
+.firefly{
+
+    position:absolute;
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:#FFD700;
+
+    box-shadow:
+    0 0 10px yellow,
+    0 0 20px gold;
+
+    display:none;
+
+    z-index:50;
+}
+#shootingStar{
+
+    position:absolute;
+
+    width:80px;
+    height:3px;
+
+    background:white;
+
+    box-shadow:
+    0 0 10px white;
+
+    top:10vh;
+    left:-10vw;
+
+    display:none;
+
+    z-index:200;
+}
